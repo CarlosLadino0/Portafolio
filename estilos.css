@@ -147,16 +147,48 @@ span {
 }
 
 .educacion {
-    display: grid;
+    display: flex;
     width: 100vw;
     align-items: center;
     background-color: #191C32;
-    padding: 2em;
+    padding: 4em;
 }
 
+.edu-info {
+    text-align: left;
+    margin: 0;
+}
 
-.educacion p {
+.card_edu {
+    width: 300px;
+    height: 350px;
+    background-color: #2b3058;
     color: #fff;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.download_edu {
+    padding: 10px 20px;
+    background-color: #930dd1;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(147, 13, 209, -69);
+    text-decoration: none; 
+    color: #fff;
+    display: inline-block; 
+}
+
+.download_edu:hover {
+    background-color: #fff;
+    box-shadow: none;
+    transition: ease-in .2s;
+    color: #191C32;
 }
 
 .habilidades {
@@ -287,7 +319,7 @@ span {
 .Card_img {
     width: 100%;
     height: 180px;
-    background-image: url(../Portafolio/img/2-original.png);
+    background-image: url(img/2-original.png);
     background-size: cover;
 }
 
