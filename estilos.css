@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+
+.banner {
+    background-color: #191C32;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 80px;
+}
+
+.secciones {
+    width: 100vw;
+    height: 100vh;
+    background-color: #191C32;
+    color: #fff;
+    padding-top: 70px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.logo {
+    margin-top: -7px;
+    color: #fff;
+}
+
+.logo span{
+    color: #930dd1;
+
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li a:hover {
+    color: #930dd1;
+    transition: ease-in .3s; 
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.main h2 {
+    font-size: 1.9em;
+}
+
+h1 {
+    font-size: 3em;
+}
+span {
+    color: #930dd1;
+}
+
+.download {
+    padding: 10px 20px;
+    background-color: #930dd1;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(147, 13, 209, -69);
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.download:hover {
+    background-color: #fff;
+    box-shadow: none;
+    transition: ease-in .2s;
+    color: #191C32;
+    text-decoration: none !important;
+}
+
+.main img {
+    width: 350px;
+    border: 7px solid #930dd1;
+    height: 500px;
+}
+
+.SobreMi {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.SobreMi img {
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.SobreMi-Info {
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.SobreMi-Info h2 {
+    font-size: 2em;
+    color: #191C32;
+}
+
+.rayita {
+    height: 4px;
+    width: 60px;
+    background-color: #930dd1;
+    margin-top: 10px;
+    margin-bottom: 2em;
+}
+
+.SobreMi p {
+    margin-bottom: 1em;
+    color: #191C32;
+}
+
+.educacion {
+    display: grid;
+    width: 100vw;
+    align-items: center;
+    background-color: #191C32;
+    padding: 2em;
+}
+
+
+.educacion p {
+    color: #fff;
+}
+
+.habilidades {
+    display: flex;
+    padding: 2em;
+    font-size: 1.1em;
+}
+
+.habilidades-Info {
+    padding: 1em;
+    margin-top: -20px;
+    position: relative;
+    font-size: 1.1em;
+}
+
+.contenedor-progress {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 3em;
+}
+
+.contenedor-progress .progress {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #fff;
+    background: #2b3058 linear-gradient(to right, transparent 50%, var(--clr) 0);
+}
+
+.contenedor-progress .progress h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    z-index: 1;
+    font-weight: 1000;
+    color: #2b3058;
+}
+
+.contenedor-progress .progress h3 span {
+    font-size: 0.65em;
+    font-weight: 800;
+    color: #2b3058;
+    
+}
+
+.contenedor-progress .progress h4 {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-weight: 500;
+    color: #191C32;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 1000;
+}
+
+.contenedor-progress .progress::before {
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+
+.contenedor-progress .progress::after {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.contenedor-progress .progress::before {
+    background: var(--clr);
+    transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+}
+
+
+.edu-info h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.portafolio {
+    width: 100vw;
+    height: 50vw;
+    background-color: #191C32;
+    padding: 2em;
+}
+
+.portafolio-titulo {
+    width: 100%;
+    padding: 1.2em;
+}
+
+.portafolio-titulo h2 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.portafolio .contenedor {
+    width: 80vw;
+    height: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #2b3058;
+    color: #fff;
+    margin: 1em;
+}
+
+.Card_img {
+    width: 100%;
+    height: 180px;
+    background-image: url(../Portafolio/img/2-original.png);
+    background-size: cover;
+}
+
+.Card_titulo {
+    padding: 20px;
+    text-align: center;
+}
+
+.Card_links_proyectos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Card_links_proyectos a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Card_links_proyectos i {
+    font-size: 1.5em;
+}
+
+.seccion-contacto {
+    background-color: #191C32;
+    height: 40vw;
+    width: 100vw;
+    padding: 2em;
+}
+
+.Titulo-contacto h2 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.form-contacto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.form textarea {
+    height: 150px;
+    background: none;
+    color: #fff;
+    padding: 1.5em;
+    border: 1px solid #fff;
+}
+
+.boton-enviar {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #930dd1;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(147, 13, 209, -69);
+    color: #fff;
+}
+
+.boton-enviar:hover {
+    background-color: #fff;
+    box-shadow: none;
+    transition: ease-in .2s;
+    box-shadow: none;
+    color: #191C32;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #930dd1;
+}
+
+.contenido-footer h2 {
+    font-size: 3em;
+}
+
+.contenido-footer h5 {
+    font-size: 1.5em;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.redes-sociales i {
+    font-size: 1.5em;
+    color: black;
+}       
